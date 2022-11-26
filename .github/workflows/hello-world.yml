@@ -2,27 +2,18 @@ name: Github-actions-hello-world-example
 on: 
   push:
     branches: [master, dev]
-  pull_request:
-    branches: [main]
 jobs:
-  say-hello:
+  :
     runs-on: ubuntu-latest
     steps:
-      - 
-        name: Say Hello 
-        run: echo "Hello world"
+      - uses actions/checkout@v2
+      - uses actions/setup-node@v1
+        with:
+          node-version: '14'
       -
-        name: Do stuff
-        run: |
-          echo "Step 1"
-          echo "step 2"
-          echo "step 3"
+        name: install deps
+        run: npm install 
       -
-        name: Say Goodbye
-        run: echo "goodbye"
-  print-date:
-    runs-on: ubuntu-latest
-    steps:
-      -
-        name: 'print date'
-        run: echo `date` on `uname -a`
+        name: run script
+        run: node index.js
+  
