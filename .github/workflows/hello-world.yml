@@ -16,3 +16,8 @@ jobs:
       -
         name: Say Goodbye
         run: echo "goodbye"
+  print-date:
+    runs-on: ubuntu-latest
+    steps:
+      name: 'print date'
+      run: echo `date`
