@@ -1,5 +1,9 @@
 name: Github-actions-hello-world-example
-on: push 
+on: 
+  push:
+    branches: [master, main]
+  pull_request:
+    branches: [main]
 jobs:
   say-hello:
     runs-on: ubuntu-latest
