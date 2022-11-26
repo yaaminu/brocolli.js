@@ -2,10 +2,10 @@ name: Github-actions-hello-world-example
 on: 
   push:
     branches: [master, dev]
+env:
+  COPY_DEST: '/tmp/copied'
 jobs:
   uses-actions:
-    env:
-      COPY_DEST: '/tmp/copied'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
