@@ -16,4 +16,18 @@ jobs:
       -
         name: run script
         run: node index.js
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - 
+        name: list files
+        run: ls -lah . 
+  say-goodbye:
+    runs-on: ubuntu-latest
+    needs: [say-hello, uses-actions]
+    steps:
+      - 
+        name: say-goodbye
+        run: echo "say-hello and uses-actions is complete"
   
