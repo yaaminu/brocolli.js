@@ -3,9 +3,9 @@ on:
   push:
     branches: [master, dev]
 jobs:
-  env:
-    COPY_DEST: /tmp/copied
   uses-actions:
+    env:
+      COPY_DEST: /tmp/copied
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
