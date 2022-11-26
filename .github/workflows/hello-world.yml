@@ -3,6 +3,7 @@ on:
   push:
     branches: [master, dev]
 jobs:
+  uses-actions:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
