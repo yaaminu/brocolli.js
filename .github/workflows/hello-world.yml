@@ -5,14 +5,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - 
-      name: Say Hello 
-      run: echo "Hello world"
+        name: Say Hello 
+        run: echo "Hello world"
       -
-      name: Do stuff
-      run: |
-        echo "Step 1"
-        echo "step 2"
-        echo "step 3"
+        name: Do stuff
+        run: |
+          echo "Step 1"
+          echo "step 2"
+          echo "step 3"
       -
-      name: Say Goodbye
-      run: echo "goodbye"
+        name: Say Goodbye
+        run: echo "goodbye"
