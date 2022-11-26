@@ -19,5 +19,6 @@ jobs:
   print-date:
     runs-on: ubuntu-latest
     steps:
-      name: 'print date'
-      run: echo `date`
+      -
+        name: 'print date'
+        run: echo `date`
