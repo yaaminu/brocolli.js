@@ -31,9 +31,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - 
-        name: list files
+        name: copy files
         run: |
-          echo $COPY_DEST
           mkdir -p $COPY_DEST
           cp -r . $COPY_DEST
   delete-files:
