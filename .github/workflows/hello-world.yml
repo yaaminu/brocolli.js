@@ -21,4 +21,4 @@ jobs:
     steps:
       -
         name: 'print date'
-        run: echo `date`
+        run: echo `date` on `uname -a`
