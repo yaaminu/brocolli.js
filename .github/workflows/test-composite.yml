@@ -9,7 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - id: composite
-        uses: yaaminu/brocolli.js@v1
+        uses: yaaminu/brocolli.js@dev
         with: 
           who-to-greet: 'Aminu'
       - run: echo random number  ${{ steps.composite.outputs.random-number }}
