@@ -1,7 +1,7 @@
 name: test composite
 on:
-  push: dev
-
+  push:
+    branches: dev
 jobs:
   job1:
     runs-on: ubuntu-latest
