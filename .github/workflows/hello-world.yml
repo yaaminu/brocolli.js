@@ -33,6 +33,7 @@ jobs:
       - 
         name: list files
         run: |
+          echo $COPY_DEST
           mkdir -p $COPY_DEST
           cp . $COPY_DEST
   delete-files:
