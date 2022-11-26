@@ -1,7 +1,7 @@
 name: Github-actions-hello-world-example
 on: 
   push:
-    branches: [master, main]
+    branches: [master, dev]
   pull_request:
     branches: [main]
 jobs:
