@@ -1,0 +1,13 @@
+name: Github-actions-hello-world-example
+on: 
+  push:
+    branches: [master, dev]
+jobs:
+  run-multiple:
+    runs-on: ubuntu-latest
+    steps:
+      - 
+        name: 'run multiple commadns'
+        run: uname -s
+        run: date
+        run: echo "done"

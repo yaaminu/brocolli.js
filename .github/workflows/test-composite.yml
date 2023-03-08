@@ -1,0 +1,16 @@
+name: test composite
+on:
+  push:
+    branches: dev
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    name: 'job1 that uses composites'
+    steps:
+      - uses: actions/checkout@v2
+      - id: composite
+        uses: yaaminu/brocolli.js@dev
+        with: 
+          who-to-greet: 'Aminu'
+      - run: echo random number  ${{ steps.composite.outputs.random-number }}
+        shell: bash
